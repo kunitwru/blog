@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import Item from './Item';
 
 export default class Home extends Component {
@@ -32,9 +33,13 @@ export default class Home extends Component {
                 <span className="sr-only">Next</span>
                 </a>
             </div>
-            <div className="row col-sm-12 col-md-12">
+            <div className="row col-sm-12 col-md-12 home-page">
                 <div className="section_title">
-                    <h2>Đồ phượt</h2>
+                    <h2>
+                        <Link className="nav-link" to="/shop">
+                            Đồ phượt
+                        </Link>
+                    </h2>
                 </div>
                 <div className="row">
                     <Item>iPhone X</Item>
@@ -43,7 +48,11 @@ export default class Home extends Component {
                     <Item col="3">Oppo Find X</Item>
                 </div>
                 <div className="section_title">
-                    <h2>Phượt point</h2>
+                    <h2>
+                        <Link className="nav-link" to="/dia-diem">
+                            Phượt point
+                        </Link>
+                    </h2>
                 </div>
                 <div className="row">
                     <Item col="3">iPhone 8 plus Red</Item>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Item from './Item'
+import {Link} from 'react-router-dom'
 import Sidebar from './Sidebar';
 
 export default class Product extends Component {
@@ -29,9 +30,14 @@ export default class Product extends Component {
      const {users} = this.state
     return (
         <div className="row">
-            <Sidebar>Shop Menu</Sidebar>
-            {/* /.col-lg-3 */}
             <div className="col-lg-9 my-4">
+                <div className="section_title">
+                    <h2>
+                        <Link className="nav-link" to="/shop">
+                            Đồ phượt
+                        </Link>
+                    </h2>
+                </div>
                 <div className="row">
                    { users ? (
                     users.map(user => (
@@ -47,6 +53,9 @@ export default class Product extends Component {
                 {/* /.row */}
             </div>
             {/* /.col-lg-9 */}
+            <div className="col-lg-3 my-4">
+                   <Sidebar>Bộ lọc</Sidebar>
+            </div>
         </div>
       
     )

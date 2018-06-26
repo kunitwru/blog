@@ -28,22 +28,25 @@ export default class Item extends Component {
   render() {
       
     return (
-        <div className="col-lg-4 col-md-6 my-4">
+        <div className="col-lg-12 my-4">
             <div className="card h-100">
-                <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"} alt={this.props.children}>
-                    <img className="card-img-top" src={ this.props.data.avatar_url } alt={this.props.children}  />
-                </Link>
-                <div className="card-body">
-                    <h4 className="card-title">
-                        <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"}>{ this.props.children }</Link>
-                    </h4>
-                    <h5>{ this.props.data.node_id }</h5>
-                    <p className="card-text">
-                        { this.props.data.body }
-                    </p>
-                </div>
-                <div className="card-footer">
-                    <small className="text-muted">★ ★ ★ ★ ☆</small>
+                <h4 className="card-title-item">
+                    <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"}>{ this.props.children }</Link>
+                </h4>
+                <div className="row">
+                    <div className="col-lg-4 left ">
+                        <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"} alt={this.props.children}>
+                            <img className="card-img-top" src={ this.props.data.avatar_url } alt={this.props.children}  />
+                        </Link>
+                    </div>
+                    <div className="col-lg-8 right">
+                        
+                        <h5>{ this.props.data.node_id }</h5>
+                        <p className="card-text">
+                            { this.props.data.body }
+                        </p>
+                        <small className="text-muted">★ ★ ★ ★ ☆</small>
+                    </div>
                 </div>
             </div>
         </div>

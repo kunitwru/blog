@@ -16,9 +16,15 @@ body {
 .bg-green {
   background-color: #AADD00!important;
 }
+h4.card-title a {
+  color: orange;
+}
 .card-img-top {
-  height: 190px;
+  padding: 10px;
   width: 100%;
+}
+.no-padding {
+  padding: 0;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
@@ -41,4 +47,13 @@ body {
   border-radius: 50%;
   bottom: 0;
   transform: translateY(50%);
+}
+a.nav-link {
+  color: orange;
+}
+.form-login {
+  margin: 50px auto;
+}
+h4.card-title-item {
+  padding: 5px 15px;
 }

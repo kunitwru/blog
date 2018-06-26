@@ -15,7 +15,7 @@ export default class Header extends Component {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item ">
                         <NavLink activeClassName="active" className="nav-link" to="/dia-diem">
-                        <i className="fa fa-rss-square"></i> Địa điểm
+                            <i className="fa fa-rss-square"></i> Phượt point
                         </NavLink>
                     </li>
                     <li className="nav-item ">
