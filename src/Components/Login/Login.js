@@ -7,6 +7,9 @@ export default class Login extends Component {
     event.preventDefault();
     alert("submited");
   }
+  componentWillMount() {
+    document.title = "Đăng nhập hệ thống";
+  }
 
   render() {
     return (
