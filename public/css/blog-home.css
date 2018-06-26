@@ -13,7 +13,32 @@ body {
     padding-top: 56px;
   }
 }
+.bg-green {
+  background-color: #AADD00!important;
+}
 .card-img-top {
   height: 190px;
   width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.section_title {
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 15px;
+  position: relative;
+  margin-bottom: 35px;
+  width: 100%;
+  margin-top: 35px;
+}
+.section_title:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: #AADD00;
+  border-radius: 50%;
+  bottom: 0;
+  transform: translateY(50%);
 }
