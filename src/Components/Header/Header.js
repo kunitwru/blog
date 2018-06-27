@@ -6,7 +6,7 @@ export default class Header extends Component {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-green fixed-top">
             <div className="container">
-            <Link className="navbar-brand" to="/"><i className="fa fa-hashtag"></i>sPhượt </Link>
+            <Link className="navbar-brand nav-home-link" to="/"><i className="fa fa-hashtag"></i>sPhượt </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
             </button>
