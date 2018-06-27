@@ -6,6 +6,7 @@
 
 body {
   padding-top: 54px;
+  background-color: #e1e1e1;
 }
 
 @media (min-width: 992px) {
@@ -55,8 +56,27 @@ a.nav-link {
   margin: 50px auto;
 }
 h4.card-title-item {
-  padding: 5px 15px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
 }
-.nav-home-link {
-  
+h4.card-title-item a {
+  color: orange;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.item-pro {
+  background-color: #e1e1e1;
+}
+.text-left-10 {
+  margin-left: 10px;
+}
+.text-right-10 {
+  margin-right: 10px;
+}
+.text-left-20 {
+  margin-left: 20px;
+}
+.text-right-20 {
+  margin-right: 20px;
 }

@@ -28,27 +28,42 @@ export default class Item extends Component {
   render() {
       
     return (
-        <div className="col-lg-12 my-4">
-            <div className="card h-100">
+        <div className="col-sm-12 my-4 border item-pro">
                 <h4 className="card-title-item">
                     <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"}>{ this.props.children }</Link>
                 </h4>
                 <div className="row">
                     <div className="col-lg-4 left ">
                         <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"} alt={this.props.children}>
-                            <img className="card-img-top" src={ this.props.data.avatar_url } alt={this.props.children}  />
+                            <img className="card-img-top" src="http://placehold.it/350x350" alt={this.props.children}  />
                         </Link>
                     </div>
                     <div className="col-lg-8 right">
-                        
-                        <h5>{ this.props.data.node_id }</h5>
+                        <small className="text-danger text-right-20">
+                            <i class="fa fa-money"></i> 300.000 VND
+                        </small>
+                        <small className="text-primary text-right-20">
+                            <i class="fa fa-map-marker"></i> Hà Nội
+                        </small>
+                        <small className="text-info text-right-10">
+                            <i class="fa fa-user"></i> Phạm Sinh
+                        </small>
                         <p className="card-text">
                             { this.props.data.body }
                         </p>
                         <small className="text-muted">★ ★ ★ ★ ☆</small>
+                        <hr />
+                        <small className="text-default text-right-20">
+                            <i class="fa fa-eye"></i> 231
+                        </small>
+                        <small className="text-default">
+                            <i class="fa fa-heart"></i> 100
+                        </small>
+                        <small className="text-default pull-right text-left-10">
+                            <i class="fa fa-calendar"></i> 20-12-2018
+                        </small>
                     </div>
                 </div>
-            </div>
         </div>
     )
   }
