@@ -6,7 +6,7 @@
 
 body {
   padding-top: 54px;
-  background-color: #e1e1e1;
+  background-color: #e8e5e5;
 }
 
 @media (min-width: 992px) {
@@ -26,6 +26,12 @@ h4.card-title a {
 }
 .no-padding {
   padding: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}
+.no-padding-left {
+  padding-left: 0;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
@@ -79,4 +85,72 @@ h4.card-title-item a {
 }
 .text-right-20 {
   margin-right: 20px;
+}
+
+.item-header {
+  display: block;
+  margin-bottom: 15px;
+}
+.item-header a {
+  max-width: 100%;
+}
+.image-hover {
+  display: inline-block;
+  overflow: hidden;
+}
+.image-hover figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.image-hover img {
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+.image-hover:hover img {
+  transform: scale(1.1) rotate(2deg);
+  -moz-transform: scale(1.1) rotate(2deg);
+  -webkit-transform: scale(1.1) rotate(2deg);
+}
+.category-text {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.item-content h3 {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.7em;
+  color: #444;
+  font-weight: 500;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.item-content h3 a {
+  color: #444;
+  text-decoration: none;
+}
+.item-content h3 a:hover {
+  color: #AADD00;
+}
+.padding-all-10 {
+  padding: 10px 5px;
+}
+#sidebar {
+  display: block;
+  position: relative;
+}
+#sidebar .widget {
+  margin-bottom: 10px;
+  position: relative;
+}
+#sidebar .widget h3 {
+  display: block;
+  padding: 11px 16px;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.3em;
+  background-color: #e4e4e4;
+  border-left: 3px solid #AADD00;
+  text-transform: uppercase;
 }
