@@ -5,6 +5,7 @@ export default class Login extends Component {
 
   onSubmit = (event) => {
     event.preventDefault();
+    event.target.reset();
     alert("submited");
   }
   componentWillMount() {
@@ -18,7 +19,7 @@ export default class Login extends Component {
         <div className="row">
           <div className="col-md-3" />
           <div className="col-md-6">
-            <h2>Đăng nhập hệ thống</h2><br />
+            <h2 style={{color:"red"}}>Đăng nhập hệ thống</h2><br />
             <p>
               Chào mừng bạn đến với hệ thống chia sẻ kinh nghiệm phượt.
             </p>
@@ -32,7 +33,7 @@ export default class Login extends Component {
               <label className="sr-only" htmlFor="email">E-Mail Address</label>
               <div className="input-group mb-2 mr-sm-2 mb-sm-0">
                 <div className="input-group-addon" style={{width: '2.6rem'}}><i className="fa fa-at" /></div>
-                <input type="text" name="email" className="form-control" id="email" placeholder="you@example.com" required />
+                <input type="text" name="email" className="form-control" id="email" placeholder="you@domain.com" required />
               </div>
             </div>
           </div>

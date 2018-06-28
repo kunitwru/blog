@@ -25,13 +25,18 @@ export default class Header extends Component {
                     </li>
                     <li className="nav-item">
                         <NavLink activeClassName="active" className="nav-link" to="/phuot">
-                            <i className="fa fa-comments"></i> Kinh nghiệm phượt
+                            <i className="fa fa-send"></i> Gửi bài
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink activeClassName="active" className="nav-link" to="/login">
                             <i className="fa fa-sign-in"></i> Đăng nhập
                         </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/facebook" className="nav-link text-mute pull-left"><i className="fa fa-facebook"></i></Link>
+                        <Link to="/youtube" className="nav-link text-mute pull-left"><i className="fa fa-youtube"></i></Link>
+                        <Link to="/twiiter" className="nav-link text-mute pull-left"><i className="fa fa-twitter"></i></Link>
                     </li>
                 </ul>
             </div>

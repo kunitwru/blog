@@ -29,14 +29,14 @@ export default class Travel extends Component {
           <div className="col-sm-12 row">
           <SliderTop />
             <div className="col-sm-9">
-            <div className="row bg-white">
-              {
-                results ? (
-                  results.map((res, key) => {
-                    return <ItemTravel key={key} data={res}>{res.name}</ItemTravel>
-                  })
-                ) : ("<div>Loading ...</div>")
-              }
+              <div className="row bg-white">
+                {
+                  results ? (
+                    results.map((res, key) => {
+                      return <ItemTravel key={key} data={res}>{res.name}</ItemTravel>
+                    })
+                  ) : <div className="text-center">Loading </div>
+                }
               </div>
             </div>
             <div className="col-sm-3 no-padding-right" id="sidebar">
