@@ -40,27 +40,27 @@ export default class Item extends Component {
                     </div>
                     <div className="col-lg-8 right">
                         <small className="text-danger text-right-20">
-                            <i class="fa fa-money"></i> 300.000 VND
+                            <i className="fa fa-money"></i> 300.000 VND
                         </small>
                         <small className="text-primary text-right-20">
-                            <i class="fa fa-map-marker"></i> Hà Nội
+                            <i className="fa fa-map-marker"></i> Hà Nội
                         </small>
                         <small className="text-info text-right-10">
-                            <i class="fa fa-user"></i> Phạm Sinh
+                            <i className="fa fa-user"></i> Phạm Sinh
                         </small>
                         <p className="card-text">
                             { this.props.data.body }
                         </p>
-                        <small className="text-muted">★ ★ ★ ★ ☆</small>
+                        <small className="text-muted text-review">★ ★ ★ ★ ☆ <span>(210)</span></small>
                         <hr />
-                        <small className="text-default text-right-20">
-                            <i class="fa fa-eye"></i> 231
+                        <small className="text-default text-right-20 pull-left">
+                            <i className="fa fa-eye"></i> 231
                         </small>
-                        <small className="text-default">
-                            <i class="fa fa-heart"></i> 100
+                        <small className="text-default pull-left">
+                            <i className="fa fa-heart"></i> 100
                         </small>
                         <small className="text-default pull-right text-left-10">
-                            <i class="fa fa-calendar"></i> 20-12-2018
+                            <i className="fa fa-calendar"></i> 20-12-2018
                         </small>
                     </div>
                 </div>
